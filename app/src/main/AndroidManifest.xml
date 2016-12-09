@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.rub.rus.sensorlister">
+
+    <uses-sdk android:minSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RunRotationVectorSensorActivity"
+            android:label="@string/title_activity_rotation_vector_sensor_show"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.rub.rus.sensorlister.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ShowRotationVectorSensorInfoActivity"
+            android:label="@string/title_activity_rotation_vector_info"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.rub.rus.sensorlister.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RunSensorActivity"
+            android:label="@string/title_activity_sensor_show" />
+        <activity
+            android:name=".RunAccelerometerSensorActivity"
+            android:label="Accelerometer sensor data"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.rub.rus.sensorlister.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RunGyroscopeSensorActivity"
+            android:label="Gyroscope sensor data"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.rub.rus.sensorlister.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ShowAccelerometerSensorInfoActivity"
+            android:label="Details on accelerometer sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowMagneticFieldSensorInfoActivity"
+            android:label="Details on magnetic field sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RunMagneticFieldSensorActivity"
+            android:label="Magnetic field sensor data"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowAmbientTemperatureSensorInfoActivity"
+            android:label="Details on ambient temperature sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RunAmbientTemperatureSensorActivity"
+            android:label="Ambient temperature sensor data"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowGravitySensorInfoActivity"
+            android:label="Details in gravity sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RunGravitySensorActivity"
+            android:label="Gravity sensor data"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowGyroscopeSensorInfoActivity"
+            android:label="Details on gyroscope"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowHeartRateSensorInfoActivity"
+            android:label="Details on heart rate sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowLightSensorInfoActivity"
+            android:label="Details on light sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowLinearAccelerationSensorInfoActivity"
+            android:label="Details on linear acceleration sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowPressureSensorInfoActivity"
+            android:label="Details on pressure sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowProximitySensorInfoActivity"
+            android:label="Details on proximity sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ShowRelativeHumiditySensorInfoActivity"
+            android:label="Details on relative humidity sensor"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RunLightSensorActivity"
+            android:label="Light sensor data"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RunProximitySensorActivity"
+            android:label="Proximity sensor data"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RunHeartRateSensorActivity"
+            android:label="Heart rate sensor data"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RunLinearAccelerationActivity"
+            android:label="Linear acceleration sensor data"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RunPressureSensorActivity"
+            android:label="Pressure sensor data"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RunRelativeHumiditySensorActivity"
+            android:label="Relative humidity sensor data"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DataLoggerActivityAccelerometer"
+            android:label="Accelerometer logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataLoggerActivityLightSensor"
+            android:label="Light sensor logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataLoggerActivityGyroscope"
+            android:label="Gyroscope logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataLoggerActivityMagneticField"
+            android:label="Magnetic field logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataLoggerActivityProximity"
+            android:label="Proximity logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DataLoggerActivityAmbientTemperature"
+            android:label="Ambient temperature logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DataLoggerActivityGravity"
+            android:label="Gravity logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DataLoggerActivityHeartRate"
+            android:label="Heart rate logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DataLoggerActivityLinearAcceleration"
+            android:label="Linear acceleration logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DataLoggerActivityPressure"
+            android:label="Pressure logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DataLoggerActivityRelativeHumidity"
+            android:label="Relative humidity logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DataLoggerActivityRotationVector"
+            android:label="Rotation vector logger"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="de.rub.rus.sensorlister.RunLinearAccelerationActivity">
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:text= "Data obtained from Sensor.TYPE_LINEAR_ACCELERATION:"
+        android:padding="3dp"/>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text= "sensor accuracy status:" />
+        <TextView
+            android:id="@+id/linearAccelerationAccuracy" />
+        <TextView
+            android:text=""
+            android:layout_gravity="right"
+            android:padding="3dp"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="la_x: "/>
+        <TextView
+            android:id="@+id/la_xLinearAccelerationSensor" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="la_y: "/>
+        <TextView
+            android:id="@+id/la_yLinearAccelerationSensor"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="la_z: "/>
+        <TextView
+            android:id="@+id/la_zLinearAccelerationSensor"
+            android:padding="3dp"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+</TableLayout>

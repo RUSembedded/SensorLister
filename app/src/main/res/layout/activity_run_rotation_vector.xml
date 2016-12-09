@@ -1,0 +1,62 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="de.rub.rus.sensorlister.RunRotationVectorSensorActivity">
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:text= "Data obtained from Sensor.TYPE_ROTATION_VECTOR:"
+        android:padding="3dp"/>
+    <TextView
+        android:padding="3dp"
+        android:layout_width="fill_parent"
+        android:text= "(Values are from 3-by-3 [4-by-4] orientation matrix.)"/>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text= "sensor accuracy status:" />
+        <TextView
+            android:id="@+id/rotationVectorAccuracy" />
+        <TextView
+            android:text=""
+            android:layout_gravity="right"
+            android:padding="3dp"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="Azimuth (z axis):"/>
+        <TextView
+            android:id="@+id/zAngleRotationVectorSensor" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="Pitch (x axis):"/>
+        <TextView
+            android:id="@+id/xAngleRotationVectorSensor"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="Roll (y axis): "/>
+        <TextView
+            android:id="@+id/yAngleRotationVectorSensor"
+            android:padding="3dp"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+</TableLayout>

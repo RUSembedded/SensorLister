@@ -1,0 +1,306 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+
+            <TextView
+                android:text="@string/sensor_list_heading"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TableRow>
+                <TextView
+                    android:text="accelerometer: "                    />
+               
+                <Button
+                    android:id="@+id/accelerometerInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendAccelerometerInfoButtonPushed" />
+                <Button
+                    android:id="@+id/accelerometerRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendAccelerometerRunSensorButtonPushed"/>
+                <Button
+                    android:id="@+id/accelerometerLogSensorButton"
+                    style="@style/myLogButtonStyle"
+                    android:text="Log"
+                    android:onClick="sendAccelerometerLogButtonPushed"
+                    android:layout_gravity="center" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="thermometer: "
+                    />
+
+                <Button
+                    android:id="@+id/ambientTemperatureInfoButton"
+                    style="@style/myInfoButtonStyle"
+
+                    android:text="Info"
+                    android:onClick="sendAmbientTemperatureInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/ambientTemperatureRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendAmbientTemperatureRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/ambientTemperatureLogButton"
+                    android:layout_gravity="center"
+                    style="@style/myLogButtonStyle"
+                    android:onClick="sendThermometerLogButtonPushed" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="gravity sensor: "/>
+               
+                <Button
+                    android:id="@+id/gravitySensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+
+                    android:text="Info"
+                    android:onClick="sendGravityInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/gravitySensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendGravityRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/gravityLogButton"
+                    android:layout_gravity="center"
+                    style="@style/myLogButtonStyle"
+                    android:onClick="sendGravityLogButtonPushed" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="gyroscope: "/>
+                
+                <Button
+                    android:id="@+id/gyroscopeSensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendGyroscopeInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/gyroscopeSensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendGyroscopeRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/gyroscopeLogButton"
+                    android:layout_gravity="center"
+                    style="@style/myLogButtonStyle"
+                    android:onClick="sendGyroscopeLogButtonPushed" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="heart rate: "/>
+                
+                <Button
+                    android:id="@+id/heartRateSensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendHeartRateInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/heartRateSensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendHeartRateRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/heartRateLogButton"
+                    android:layout_gravity="center"
+                    style="@style/myLogButtonStyle"
+                    android:onClick="sendHeartRateLogButtonPushed" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="light sensor: "/>
+                
+                <Button
+                    android:id="@+id/lightSensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendLightSensorInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/lightSensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendLightRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/lightLogButton"
+                    style="@style/myLogButtonStyle"
+                    android:layout_gravity="center"
+                    android:onClick="sendLightLogButtonPushed" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="linear accel.: "/>
+                
+                <Button
+                    android:id="@+id/linearAccelerationSensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendLinearAccelerationInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/linearAccelerationSensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendLinearAccelerationRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/linearAccelerationButton"
+                    android:layout_gravity="center"
+                    style="@style/myLogButtonStyle"
+                    android:onClick="sendLinearAccelerationLogButtonPushed" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="magnetic field: "/>
+               
+                <Button
+                    android:id="@+id/magneticFieldSensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendMagneticFieldInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/magneticFieldSensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendMagneticFieldRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/magneticFieldLogButton"
+                    android:layout_gravity="center"
+                    style="@style/myLogButtonStyle"
+                    android:onClick="sendMagneticFieldLogButtonPushed" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="pressure: "/>
+                <Button
+                    android:id="@+id/pressureSensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendPressureInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/pressureSensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendPressureRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/pressureLogButton"
+                    android:layout_gravity="center"
+                    style="@style/myLogButtonStyle"
+                    android:onClick="sendPressureLogButtonPushed" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="proximity: "/>
+               
+                <Button
+                    android:id="@+id/proximitySensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendProximityInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/proximitySensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendProximityRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/proximityLogButton"
+                    android:layout_gravity="center"
+                    style="@style/myLogButtonStyle"
+                    android:onClick="sendProximityLogButtonPushed" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="rel. humidity: "/>
+                
+                <Button
+                    android:id="@+id/relativeHumiditySensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendRelativeHumidityInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/relativeHumiditySensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendRelativeHumidityRunSensorButtonPushed"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log"
+                    android:id="@+id/relativeHumidityLogButton"
+                    android:layout_gravity="center"
+                    style="@style/myLogButtonStyle"
+                    android:onClick="sendRelativeHumidityLogButtonPushed" />
+            </TableRow>
+                <TableRow>
+                <TextView
+                    android:text="rotation vector: "/>
+                
+                <Button
+                    android:id="@+id/rotationVectorSensorInfoButton"
+                    style="@style/myInfoButtonStyle"
+                    android:text="Info"
+                    android:onClick="sendRotationVectorInfoButtonPushed"/>
+                <Button
+                    android:id="@+id/rotationVectorSensorRunSensorButton"
+                    style="@style/myRunButtonStyle"
+                    android:text="Run"
+                    android:onClick="sendRotationVectorRunSensorButtonPushed"   />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log"
+                        android:id="@+id/rotationVectorLogButton"
+                        android:layout_gravity="center"
+                        style="@style/myLogButtonStyle"
+                        android:onClick="sendRotationVectorLogButtonPushed" />
+                </TableRow>
+
+        </TableLayout>
+</ScrollView>

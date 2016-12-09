@@ -1,0 +1,43 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="de.rub.rus.sensorlister.RunRelativeHumiditySensorActivity">
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:text= "Data obtained from Sensor.TYPE_RELATIVE_HUMIDITY:"
+        android:padding="3dp"/>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text= "sensor accuracy status:" />
+        <TextView
+            android:id="@+id/relativeHumiditySensorAccuracy" />
+        <TextView
+            android:text=""
+            android:layout_gravity="right"
+            android:padding="3dp"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="humidity: "/>
+        <TextView
+            android:id="@+id/humidityRelativeHumiditySensor" />
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+</TableLayout>

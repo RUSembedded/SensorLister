@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="de.rub.rus.sensorlister.ShowPressureSensorInfoActivity">
+
+    <TextView
+        android:text="Details on the default sensor: "
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id= "@+id/PressureDefaultSensorInfoTextView"
+        android:text="tbd at runtime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TextView
+        android:text="Details on all sensors: "
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id= "@+id/allPressureSensorsInfoTextView"
+        android:text="tbd at runtime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"/>
+
+</LinearLayout>

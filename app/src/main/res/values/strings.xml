@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">SensorLister</string>
+    <string name="action_settings">Settings</string>
+    <string name="sensor_list_heading">List of sensors available on your device</string>
+    <string name="default_sensor_list">no sensors have been detected</string>
+
+
+    <string name="accelerometerSensorDoesNotExist">accelerometer: no</string>
+    <string name="title_activity_rotation_vector_sensor_show">Rotation vector sensor data</string>
+    <string name="rotationVectorSensorInfoText">to be determined at runtime</string>
+    <string name="title_activity_rotation_vector_info">Details on rotation vector sensor</string>
+    <string name="rotationVectorDefaultSensorInfoText">to be determined at runtime</string>
+    <string name="title_activity_sensor_show">SensorShowActivity</string>
+    <string name="title_activity_run_accelerometer">RunAccelerometerActivity</string>
+    <string name="title_activity_run_gyroscope">RunGyroscopeActivity</string>
+    <string name="title_activity_show_accelerometer_sensor_info">ShowAccelerometerSensorInfoActivity</string>
+    <string name="title_activity_show_magnetic_field_sensor_info">ShowMagneticFieldSensorInfoActivity</string>
+
+    <string name="title_activity_run_magnetic_field_sensor">RunMagneticFieldSensorActivity</string>
+    <string name="title_activity_show_ambient_temperature_sensor_info">ShowAmbientTemperatureSensorInfoActivity</string>
+    <string name="title_activity_run_ambient_temperature_sensor">RunAmbientTemperatureSensorActivity</string>
+    <string name="title_activity_show_gravity_sensor_info">ShowGravitySensorInfoActivity</string>
+
+    <string name="title_activity_run_gravity_sensor">RunGravitySensorActivity</string>
+    <string name="title_activity_show_gyroscope_sensor_info">ShowGyroscopeSensorInfoActivity</string>
+    <string name="title_activity_show_heart_rate_sensor_info">ShowHeartRateSensorInfoActivity</string>
+    <string name="title_activity_show_light_sensor_info">ShowLightSensorInfoActivity</string>
+    <string name="title_activity_show_linear_acceleration_sensor_info">ShowLinearAccelerationSensorInfoActivity</string>
+    <string name="title_activity_show_pressure_sensor_info">ShowPressureSensorInfoActivity</string>
+    <string name="title_activity_show_proximity_sensor_info">ShowProximitySensorInfoActivity</string>
+    <string name="title_activity_show_relative_humidity_sensor_info">ShowRelativeHumiditySensorInfoActivity</string>
+
+    <string-array name="logging_times_array">
+        <item>1s</item>
+        <item>2s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>20s</item>
+        <item>30s</item>
+        <item>60s</item>
+    </string-array>
+
+    <string-array name="sensor_speed_array">
+        <item>Normal</item>
+        <item>Game</item>
+        <item>Fastest</item>
+    </string-array>
+
+    <string-array name="delay_times_array">
+        <item>0s</item>
+        <item>1s</item>
+        <item>2s</item>
+        <item>5s</item>
+        <item>10s</item>
+        <item>20s</item>
+        <item>30s</item>
+        <item>60s</item>
+    </string-array>
+
+
+</resources>

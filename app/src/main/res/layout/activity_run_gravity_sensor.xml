@@ -1,0 +1,58 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="de.rub.rus.sensorlister.RunGravitySensorActivity">
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:text= "Data obtained from Sensor.TYPE_GRAVITY:"
+        android:padding="3dp"/>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090"/>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text= "sensor accuracy status:" />
+        <TextView
+            android:id="@+id/gravityAccuracy" />
+        <TextView
+            android:text=""
+            android:layout_gravity="right"
+            android:padding="3dp"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="g_x: "/>
+        <TextView
+            android:id="@+id/g_xGravitySensor" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="g_y: "/>
+        <TextView
+            android:id="@+id/g_yGravitySensor"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:padding="3dp"
+            android:text="g_z: "/>
+        <TextView
+            android:id="@+id/g_zGravitySensor"
+            android:padding="3dp"/>
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+</TableLayout>
